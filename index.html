@@ -139,6 +139,17 @@
       .btn-primary:active {
         transform: translateY(0);
       }
+      @media (max-width: 400px) {
+        .nav-logo {
+          font-size: 14px;
+          gap: 6px;
+        }
+        .btn-primary {
+          font-size: 10px;
+          padding: 8px 12px;
+          letter-spacing: 0.04em;
+        }
+      }
 
       /* ─────────────────────────────────────
        HERO
@@ -581,6 +592,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
       }
       .demo-header-left {
         display: flex;
@@ -1079,10 +1092,8 @@
           <span class="nav-logo-dot" style="width: 6px; height: 6px"></span>
           WindConvert
         </div>
-        <div class="footer-links">
-          <a href="/convert">Converter</a>
-        </div>
         <div class="footer-copy">© 2026 WindConvert</div>
+        <div class="footer-copy">Made by Tanmoy Pramanik</div>
       </div>
     </footer>
   </body>
